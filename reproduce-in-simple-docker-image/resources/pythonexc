@@ -1,0 +1,30 @@
+<pre>
+httplib - 1d
+
+Unexpected error:
+
+0: <type 'exceptions.TypeError'>
+
+1: coercing to Unicode: need string, NoneType type found
+
+2:
+  File "<script>", line 11, in <module>
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/httplib.py", line 1247, in __init__
+    context = ssl._create_default_https_context()
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/ssl.py", line 400, in create_default_context
+    context.load_default_certs(purpose)
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/ssl.py", line 1183, in load_default_certs
+    self.set_default_verify_paths()
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/ssl.py", line 1192, in set_default_verify_paths
+    default_verify_paths = get_default_verify_paths()
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/ssl.py", line 324, in get_default_verify_paths
+    return DefaultVerifyPaths(cafile if os.path.isfile(cafile) else None,
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/genericpath.py", line 29, in isfile
+    st = os.stat(path)
+  File "/opt/xl-release-server/lib/jython-standalone-2.7.1.patch2618.jar/Lib/genericpath.py", line 29, in isfile
+    st = os.stat(path)
+
+3:
+
+Exception during execution:
+TypeError: coercing to Unicode: need string, NoneType type found in <script> at line number 11
